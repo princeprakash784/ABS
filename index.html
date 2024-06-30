@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambulance Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#login">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Register Module -->
+    <section id="register">
+        <h2>Register</h2>
+        <form id="register-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password"><br><br>
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <!-- Login Module -->
+    <section id="login">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Login">
+        </form>
+    </section>
+
+    <!-- User Profile Module -->
+    <section id="profile">
+        <h2>User Profile</h2>
+        <form id="profile-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password"><br><br>
+            <input type="submit" value="Update Profile">
+        </form>
+    </section>
+
+    <!-- Ambulance Booking Module -->
+    <section id="booking">
+        <h2>Ambulance Booking</h2>
+        <form id="booking-form">
+            <label for="pickup-location">Pickup Location:</label>
+            <input type="text" id="pickup-location" name="pickup-location"><br><br>
+            <label for="hospital">Select Hospital:</label>
+            <select id="hospital" name="hospital">
+                <!-- Hospital options will be populated dynamically using JavaScript -->
+            </select><br><br>
+            <label for="ambulance-size">Select Ambulance Size:</label>
+            <select id="ambulance-size" name="ambulance-size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select><br><br>
+            <input type="submit" value="Book Ambulance">
+        </form>
+    </section>
+
+    <!-- Google Maps API -->
+    <div id="map"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
